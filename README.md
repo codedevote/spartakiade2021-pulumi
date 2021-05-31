@@ -1,0 +1,1 @@
+# spartakiade2021-pulumi
