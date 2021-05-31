@@ -1,6 +1,6 @@
 # Pulumi Workshop - Spartakiade 2021
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/codedevote/spartakiade2021-pulumi)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#github.com/codedevote/spartakiade2021-pulumi)
 
 ## Labs
 
