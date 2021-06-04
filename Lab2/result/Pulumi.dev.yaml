@@ -1,0 +1,2 @@
+config:
+  lab-2:imageName: nginx:stable
