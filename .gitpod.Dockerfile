@@ -6,6 +6,8 @@ RUN curl -fsSL https://get.pulumi.com | sh -s
 # add pulumi to PATH
 ENV PATH "$PATH:/home/gitpod/.pulumi/bin"
 
+ENV TEST "TEST"
+
 # install azure cli
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash 
 
