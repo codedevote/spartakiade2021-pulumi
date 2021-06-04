@@ -1,0 +1,25 @@
+{
+    "name": "lab4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "start": "./node_modules/ts-node/dist/bin.js index.ts",
+        "test": "./node_modules/mocha/bin/mocha --timeout=120000 -r ts-node/register ./test.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@pulumi/pulumi": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.14",
+        "@types/mocha": "^8.2.2",
+        "@types/superagent": "^4.1.11",
+        "chai": "^4.2.0",
+        "cheerio": "^1.0.0-rc.9",
+        "mocha": "^8.2.1",
+        "superagent": "^6.1.0",
+        "ts-node": "^7.0.1"
+    }
+}
