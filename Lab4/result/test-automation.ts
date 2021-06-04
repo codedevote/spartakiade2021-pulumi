@@ -6,18 +6,15 @@ const randomString = crypto.randomBytes(8).toString('hex');
 
 const args: LocalProgramArgs = {
     stackName: `integration-tests-${randomString}`,
-    workDir: upath.joinSafe(__dirname, "..", "Lab3-Snapshot"),
+    workDir: upath.joinSafe(__dirname, "..", "..", "Lab3", "result"),
 };
 
 export async function deploy(): Promise<OutputMap> {
     
-    console.log(`initialising stack in directory ${args.workDir}...`);
     const stack = await LocalWorkspace.createOrSelectStack(args);
 
-    console.log("setting azure location...");
     await stack.setConfig("azure-native:location", { value: "WestEurope" });
 
-    console.log("pulumi up...");
     const up = await stack.up({ onOutput: console.log });
 
     return up.outputs;
@@ -26,7 +23,6 @@ export async function deploy(): Promise<OutputMap> {
 export async function destroy() {
     const stack = await LocalWorkspace.createOrSelectStack(args);
 
-    console.log(`destroying stack ${stack.name}`);
     await stack.destroy({ onOutput: console.log });
 }
 

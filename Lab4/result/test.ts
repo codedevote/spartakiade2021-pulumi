@@ -3,15 +3,15 @@ import * as automation from "./test-automation";
 import * as superagent from "superagent";
 import * as cheerio from "cheerio";
 
-before(async () => {
-    await automation.deploy();
-});
-
-after(async () => {
-    await automation.destroy();
-});
-
 describe("Deploying a static website", () => {
+    
+    before(async () => {
+        await automation.deploy();  // pulumi up
+    });
+
+    after(async () => {
+        await automation.destroy(); // pulumi destroy
+    });
 
     it("should return 200", async () => {
         await automation
