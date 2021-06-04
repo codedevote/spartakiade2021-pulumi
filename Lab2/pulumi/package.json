@@ -1,0 +1,10 @@
+{
+    "name": "lab-2",
+    "devDependencies": {
+        "@types/node": "^10.0.0"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.0.0",
+        "@pulumi/docker": "^3.0.0"
+    }
+}
