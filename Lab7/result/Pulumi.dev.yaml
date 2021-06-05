@@ -1,4 +1,0 @@
-config:
-  Lab7-Snapshot:kubernetesVersion: 1.19.9
-  Lab7-Snapshot:replicaCount: 1
-  azure-native:location: WestEurope
